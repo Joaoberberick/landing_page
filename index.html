@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consorcio Potiguar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="faixa">
+      <img class="logo" src="images/logopoti.png" alt="logo Potiguar Honda">
+      <div><img src="images/consorciohonda.png" alt="" class="honda"></div>
+      <p class="slogan">CONQUISTAR SUA LIBERDADE NUNCA FOI TÃO FACIL</p>
+    </div>
+    <div class="video">
+        <iframe class="youtube" src="https://www.youtube.com/embed/HPDg4u8i8_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <a href="" class="botao">GARANTA SEU CONSORCIO AGORA</a>
+    <img src="images/cliente.jpg" alt="" width="100%">
+    <h1 class="chamada">PARE DE ANDAR A PÉ!</h1>
+    <p class="chamada">Reduza a parcela da sua moto com um lance no Consorcio Potiguar</p>
+    <p class="nome">CG 160 Fan</p>
+    <img id="moto" src="images/fan_azul.png" alt="" width="100%">
+    <div class="container">
+        <div class="info">
+            <p class="preco1">Menor lance de</p>
+            <p class="preco">R$ 30.00</p>
+            <p class="preco1">Com documentação</p>
+            <p class="preco">R$ 30.00</p>
+        </div>
+        <div class="cores">
+            <button class="preto" onclick="document.getElementById('moto').src='images/fan_pre.png'"></button>
+            <button class="azul" onclick="document.getElementById('moto').src='images/fan_azul.png'"></button>
+            <button class="vermelho" onclick="document.getElementById('moto').src='images/fan_ver.png'"></button>
+            <p class="semdoc1">Sem documentação</p>
+            <p class="semdoc">R$ 30.00</p>
+        </div>
+    </div>
+    <div class="container2">
+        <a href="">
+            <div class="cta">
+                <p class="botao2">Comprar meu consórcio agora <!--<img src="images/app.png" alt="" height="30px"> -->
+                </p>
+            </div>
+        </a>
+        <a href="">
+            <div class="cta">
+                <p class="botao2">Ver consórcio em andamento</p>
+            </div>
+        </a>
+    </div>
+
+    <img class="cliente" src="images/cliente2.jpeg" alt="" width="100%">
+
+
+    <button class="accordion">COMO FUNCIONA O SORTEIO?</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <button class="accordion">COMO FUNCIONA O LANCE FIXO?</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <button class="accordion">O QUE É FUNDO DE RESERVA?</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion">O QUE É O SEGURO?</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion">QUANDO O CRÉDITO REAJUSTA REAJUSTA A MINHA PARCELA?</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion">TIPOS DE PLANOS</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <img class="logo-final" src="images/logopoti.png" alt="logo Potiguar Honda">
+   
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
