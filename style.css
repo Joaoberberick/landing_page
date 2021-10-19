@@ -24,8 +24,8 @@ html{
 }
 
 .faixa {
-    height: 550px;
-    background-color: #ffffff;
+    height: 625px;
+    background-color: #ffff;
     background-image: url(images/motobac.png);
     background-repeat: no-repeat;
     background-position-y: bottom;
